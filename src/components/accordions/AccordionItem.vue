@@ -6,7 +6,7 @@
       v-text="label"
     />
     <div :class="['accordionItem__content', isExpanded && '-open']">
-      <div class="h-px-5 h-py-30">
+      <div class="h-p-5">
         <slot />
       </div>
     </div>
@@ -115,5 +115,9 @@ export default defineComponent({
 
 .accordionItem__content.-open {
   max-height: 300rem;
+}
+
+.h-p-5 {
+  padding: 5px;
 }
 </style>
